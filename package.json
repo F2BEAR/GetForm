@@ -9,7 +9,9 @@
   "dependencies": {
     "dotenv": "8.2.0",
     "express": "4.17.1",
-    "mongodb": "3.4.1"
+    "mixin-deep": "2.0.1",
+    "mongodb": "3.4.1",
+    "set-value": "3.0.1"
   },
   "devDependencies": {
     "nodemon": "1.18.4"
