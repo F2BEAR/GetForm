@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Get Data</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <div class="content">
@@ -11,23 +12,34 @@
         NodeJs and Express!
       </p>
       <form
+        class="contentForm"
         action="/new"
         method="POST"
         enctype="application/x-www-form-urlencoded"
       >
-        <label for="usrName">Name: </label>
-        <input type="text" name="usrName" class="box" id="usrName" />
-        <label for="usrMail">Email: </label>
-        <input type="email" name="usrMail" class="box" id="usrMail" />
-        <label for="usrAge">Age: </label>
-        <input type="number" name="usrAge" class="box" id="usrAge" />
-        <label for="usrPassword">Password: </label>
-        <input
-          type="password"
-          name="usrPassword"
-          class="box"
-          id="usrPassword"
-        />
+        <h1>Suscribe!</h1>
+        <div class="inputForm">
+          <label for="usrName">Name: </label>
+          <input type="text" name="usrName" class="box" id="usrName" />
+        </div>
+        <div class="inputForm">
+          <label for="usrMail">Email: </label>
+          <input type="email" name="usrMail" class="box" id="usrMail" />
+        </div>
+        <div class="inputForm">
+          <label for="usrAge">Age: </label>
+          <input type="number" name="usrAge" class="box" id="usrAge" />
+        </div>
+        <div class="inputForm">
+          <label for="usrPassword">Password: </label>
+          <input
+            type="password"
+            name="usrPassword"
+            class="box"
+            id="usrPassword"
+          />
+        </div>
+        <br />
         <button type="submit">Add</button>
       </form>
     </div>

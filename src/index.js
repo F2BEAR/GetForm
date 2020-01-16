@@ -22,8 +22,6 @@ const port = 8080;
 const mongoKey = process.env.MONGOKEY;
 const mongoUsr = process.env.MONGOUSR;
 const mongoCluster = process.env.MONGOCLUSTER;
-console.log("key:");
-console.log(mongoKey);
 
 const uri = `mongodb+srv://${mongoUsr}:${mongoKey}@${mongoCluster}`;
 const client = new MongoClient(uri, { useNewUrlParser: true });
@@ -32,6 +30,9 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
+app.get("/styles.css", (req, res) => {
+  res.sendFile(path.join(__dirname, "styles.css"));
+});
 app.post("/new", (req, res) => {
   let myObj = {
     name: req.body.usrName,
