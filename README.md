@@ -3,6 +3,7 @@
 This is a simple app I've made as a first practice using MongoDB in a Node.Js and Express.Js server.
 
 GetForm has 3 html pages:
+
 -index.html: This is the entry point of the application, in here you'll see at the top a navbar for the navigation trough the different pages, and some text's splaining more or less what this app do and it's purpose.
 
 (*All the pages have the same navbar.*)
@@ -14,6 +15,7 @@ GetForm has 3 html pages:
 This app it's just a practice excercice I did to learn MongoDb and it's use on a Node.Js server. 
 
 Here I:
+
 -hash and salt the user password and save the hashed pass and the salt on MongoDB with the rest of the info provided by the user.
 -On login I hash and salt the given password using the same salt as the saved password and then I compare bouth hashed passwords to see if they are the same.
 -Select of user info with the mail given.
