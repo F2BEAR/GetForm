@@ -1,9 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 60%, #fff),
-    linear-gradient(70deg, #dbedff 32%, #ebfff0);
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 80%, #fff),
+    linear-gradient(70deg, #dbedff 12%, #ebfff0);
   color: rgba(27, 31, 35, 0.85);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -20,6 +25,7 @@ h1 {
 }
 
 .contentForm {
+  margin: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +42,7 @@ h1 {
 }
 .inputForm label {
   display: inline-block;
-  width: 65px;
+  width: 18%;
   text-align: left;
 }
 
@@ -47,16 +53,35 @@ h1 {
   margin: 2%;
 }
 
-button {
-  width: 20%;
-  background-color: #b5edff;
-  border: 0px;
-  font-family: monospace;
-  border-radius: 8px;
-  box-sizing: border-box;
+.navBar {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-button:hover {
+.navBtn {
+  width: 20%;
+  padding: 2%;
+  color: rgba(27, 31, 35, 0.85);
+  border: 0px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.btn {
+  width: 20%;
+  padding: 2%;
+  background-color: #b5edff;
+  border: 0px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.btn:hover {
   cursor: pointer;
   background-color: #70edff;
 }

@@ -3,45 +3,23 @@
   <head>
     <title>Get Data</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="content">
+      <nav class="navBar">
+        <a href="/" class="navBtn">Home</a>
+        <a href="signin" class="navBtn">Suscribe</a>
+        <a href="login" class="navBtn">Log In</a>
+      </nav>
       <h1>GetForm with NodeJs, Express and MongoDb</h1>
       <p>
         This is a quick example of how to save user inputs on MongoDB using
         NodeJs and Express!
       </p>
-      <form
-        class="contentForm"
-        action="/new"
-        method="POST"
-        enctype="application/x-www-form-urlencoded"
-      >
-        <h1>Suscribe!</h1>
-        <div class="inputForm">
-          <label for="usrName">Name: </label>
-          <input type="text" name="usrName" class="box" id="usrName" />
-        </div>
-        <div class="inputForm">
-          <label for="usrMail">Email: </label>
-          <input type="email" name="usrMail" class="box" id="usrMail" />
-        </div>
-        <div class="inputForm">
-          <label for="usrAge">Age: </label>
-          <input type="number" name="usrAge" class="box" id="usrAge" />
-        </div>
-        <div class="inputForm">
-          <label for="usrPassword">Password: </label>
-          <input
-            type="password"
-            name="usrPassword"
-            class="box"
-            id="usrPassword"
-          />
-        </div>
-        <br />
-        <button type="submit">Add</button>
-      </form>
     </div>
   </body>
 </html>
