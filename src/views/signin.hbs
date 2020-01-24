@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sign In</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <form class="contentForm" action="/new" method="POST" enctype="application/x-www-form-urlencoded">
+    <h1>Suscribe!</h1>
+    <div class="inputForm">
+      <label for="usrName">Name: </label>
+      <input type="text" name="usrName" class="box" id="usrName" required />
+    </div>
+    <div class="inputForm">
+      <label for="usrMail">Email: </label>
+      <input type="email" name="usrMail" class="box" id="usrMail" required />
+    </div>
+    <div class="inputForm">
+      <label for="usrAge">Age: </label>
+      <input type="number" name="usrAge" class="box" id="usrAge" required />
+    </div>
+    <div class="inputForm">
+      <label for="usrPassword">Password: </label>
+      <input type="password" name="usrPassword" class="box" id="usrPassword" required />
+    </div>
+    <br />
+    <button type="submit" class="btn">Add</button>
+  </form>
+  </div>
+</body>
+
+</html>

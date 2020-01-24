@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Get Data</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="content">
+    <h1>GetForm with NodeJs, Express and MongoDb</h1>
+    <p>
+      This is a quick example of how to save user inputs on MongoDB using
+      NodeJs and Express!
+    </p>
+  </div>
+  <form class="contentForm" action="/search" method="POST" enctype="application/x-www-form-urlencoded">
+    <h3>Search for Any user here:</h3>
+    <div class="searchBox">
+      <input type="text" class="searchInput" name="userName" />
+      <button type="submit" class="searchButton" />
+    </div>
+    {{#if users}}
+    {{#each users}}
+    <div class="resultContent">
+      <div class="result">
+        <p>Name:</p>
+        <p>{{userName}}</p>
+      </div>
+      <div class="result">
+        <p>E-Mail:</p>
+        <p>{{email}}</p>
+      </div>
+      <div class="result">
+        <p>Age:</p>
+        <p>{{age}}</p>
+      </div>
+    </div>
+    {{/each}}
+    {{/if}}
+  </form>
+</body>
+
+</html>
